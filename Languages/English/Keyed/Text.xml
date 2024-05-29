@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MMS.ScanRange>Current/max scan range: {0} / {1}</MMS.ScanRange>
+  <MMS.ScanProgress>Scan progress: {0} %</MMS.ScanProgress>
+  <MMS.PeriodicLight>Enable periodic light</MMS.PeriodicLight>
+  <MMS.PeriodicLightTT>When enabled, the MMS will periodically emits a short flash of light. This can help you locate it.</MMS.PeriodicLightTT>
+  <MMS.CurrentModVersion>Installed mod-version: {0}</MMS.CurrentModVersion>
+</LanguageData>
