@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>2e3a29b9-1cd4-475c-bf58-d0a9e2c0f8e8</ID>
   <ModName>MiningCo. MMS (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.6.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,7 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
 

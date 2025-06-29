@@ -6,7 +6,7 @@ namespace MobileMineralSonar;
 
 public class Controller : Mod
 {
-    public static Settings settings;
+    public static Settings Settings;
     public static string CurrentVersion;
 
     public Controller(ModContentPack content) : base(content)

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <MMS.ScanRange>Current/max scan range: {0} / {1}</MMS.ScanRange>
   <MMS.ScanProgress>Scan progress: {0} %</MMS.ScanProgress>

@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 2557276781
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fe1b0425dff4cedae036eb5f5c4a85b9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fe1b0425dff4cedae036eb5f5c4a85b9
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanRange30.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanRay50x50.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Things/Building/SatelliteDish.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanRange40.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanRange20.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanRange10.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanRange50.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Things/Building/MenuIcon_MobileMineralSonar.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Things/Building/MobileMineralSonar.png
+- Assets/Data/Mlie.MiningCoMMS/Textures/Effects/ScanSpot.png
+Dependencies: []

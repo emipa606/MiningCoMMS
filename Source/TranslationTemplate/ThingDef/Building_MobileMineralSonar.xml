@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: mobile mineral sonar -->
+  <MobileMineralSonar.label>mobile mineral sonar</MobileMineralSonar.label>
+  <!-- EN: Slowly scans the surrounding area to detect mineral ores. Works much more faster when powered. -->
+  <MobileMineralSonar.description>Slowly scans the surrounding area to detect mineral ores. Works much more faster when powered.</MobileMineralSonar.description>
+</LanguageData>

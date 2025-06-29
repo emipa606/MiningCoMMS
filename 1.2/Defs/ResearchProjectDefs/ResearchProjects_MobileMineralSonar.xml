@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ResearchProjectDef>
     <defName>ResearchMobileMineralSonar</defName>
@@ -21,7 +21,7 @@
     <label>mobile mineral sonar: enhanced scan</label>
     <description>By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.
 
-Mobile mineral sonar scan range is increased (30 -&gt; 50).
+Mobile mineral sonar scan range is increased (30 -> 50).
 Mobile mineral sonar detection chance is improved.
 
 * MiSoTech: Mineral Sonar Technology</description>

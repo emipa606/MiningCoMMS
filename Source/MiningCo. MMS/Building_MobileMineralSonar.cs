@@ -10,88 +10,88 @@ namespace MobileMineralSonar;
 [StaticConstructorOnStartup]
 internal class Building_MobileMineralSonar : Building
 {
-    public const int baseMaxScanRange = 30;
+    private const int baseMaxScanRange = 30;
 
-    public const int enhancedMaxScanRange = 50;
+    private const int enhancedMaxScanRange = 50;
 
-    public const float baseDetectionChance = 0.2f;
+    private const float baseDetectionChance = 0.2f;
 
-    public const float enhancedDetectionChance = 0.4f;
+    private const float enhancedDetectionChance = 0.4f;
 
     private const int scanProgressThresholdPerCell = 1000;
 
-    public const int flashPeriodInSeconds = 5;
+    private const int flashPeriodInSeconds = 5;
 
-    public static int maxScanRange = baseMaxScanRange;
+    private static int maxScanRange = baseMaxScanRange;
 
-    public static float detectionChance = baseDetectionChance;
+    private static float detectionChance = baseDetectionChance;
 
-    public static readonly Material scanRange10 = MaterialPool.MatFrom("Effects/ScanRange10");
+    private static readonly Material scanRange10 = MaterialPool.MatFrom("Effects/ScanRange10");
 
-    public static readonly Material scanRange20 = MaterialPool.MatFrom("Effects/ScanRange20");
+    private static readonly Material scanRange20 = MaterialPool.MatFrom("Effects/ScanRange20");
 
-    public static readonly Material scanRange30 = MaterialPool.MatFrom("Effects/ScanRange30");
+    private static readonly Material scanRange30 = MaterialPool.MatFrom("Effects/ScanRange30");
 
-    public static readonly Material scanRange40 = MaterialPool.MatFrom("Effects/ScanRange40");
+    private static readonly Material scanRange40 = MaterialPool.MatFrom("Effects/ScanRange40");
 
-    public static readonly Material scanRange50 = MaterialPool.MatFrom("Effects/ScanRange50");
+    private static readonly Material scanRange50 = MaterialPool.MatFrom("Effects/ScanRange50");
 
-    public static readonly Material satelliteDish = MaterialPool.MatFrom("Things/Building/SatelliteDish");
+    private static readonly Material satelliteDish = MaterialPool.MatFrom("Things/Building/SatelliteDish");
 
-    public static readonly Material scanRayDynamic =
+    private static readonly Material scanRayDynamic =
         MaterialPool.MatFrom("Effects/ScanRay50x50", ShaderDatabase.MetaOverlay);
 
-    public static readonly Material scanSpot = MaterialPool.MatFrom("Effects/ScanSpot", ShaderDatabase.Transparent);
+    private static readonly Material scanSpot = MaterialPool.MatFrom("Effects/ScanSpot", ShaderDatabase.Transparent);
 
-    public List<ThingDef> detectedDefList;
+    private readonly Vector3 satelliteDishScale = new(2f, 1f, 2f);
 
-    public int nextFlashTick;
+    private readonly Vector3 scanRangeScale30 = new(60f, 1f, 60f);
 
-    public CompPowerTrader powerComp;
+    private readonly Vector3 scanRangeScale50 = new(100f, 1f, 100f);
 
-    public Matrix4x4 satelliteDishMatrix;
+    private readonly Vector3 scanSpotScale = new(1f, 1f, 1f);
 
-    public float satelliteDishRotation;
+    private List<ThingDef> detectedDefList;
 
-    public Vector3 satelliteDishScale = new Vector3(2f, 1f, 2f);
+    private int nextFlashTick;
 
-    public int scanProgress;
+    private CompPowerTrader powerComp;
 
-    public int scanRange = 1;
+    private Matrix4x4 satelliteDishMatrix;
 
-    public Material scanRangeDynamic;
+    private float satelliteDishRotation;
 
-    public Matrix4x4 scanRangeDynamicMatrix;
+    private int scanProgress;
 
-    public Vector3 scanRangeDynamicScale = new Vector3(1f, 1f, 1f);
+    private int scanRange = 1;
+
+    private Material scanRangeDynamic;
+
+    private Matrix4x4 scanRangeDynamicMatrix;
+
+    private Vector3 scanRangeDynamicScale = new(1f, 1f, 1f);
 
     public Matrix4x4 scanRangeMatrix10 = default;
 
     public Matrix4x4 scanRangeMatrix20 = default;
 
-    public Matrix4x4 scanRangeMatrix30;
+    private Matrix4x4 scanRangeMatrix30;
 
     public Matrix4x4 scanRangeMatrix40 = default;
 
-    public Matrix4x4 scanRangeMatrix50;
+    private Matrix4x4 scanRangeMatrix50;
 
-    public Vector3 scanRangeScale10 = new Vector3(20f, 1f, 20f);
+    public Vector3 scanRangeScale10 = new(20f, 1f, 20f);
 
-    public Vector3 scanRangeScale20 = new Vector3(40f, 1f, 40f);
+    public Vector3 scanRangeScale20 = new(40f, 1f, 40f);
 
-    public Vector3 scanRangeScale30 = new Vector3(60f, 1f, 60f);
+    public Vector3 scanRangeScale40 = new(80f, 1f, 80f);
 
-    public Vector3 scanRangeScale40 = new Vector3(80f, 1f, 80f);
+    private Matrix4x4 scanRayDynamicMatrix;
 
-    public Vector3 scanRangeScale50 = new Vector3(100f, 1f, 100f);
+    private Vector3 scanRayDynamicScale = new(1f, 1f, 1f);
 
-    public Matrix4x4 scanRayDynamicMatrix;
-
-    public Vector3 scanRayDynamicScale = new Vector3(1f, 1f, 1f);
-
-    public Matrix4x4 scanSpotMatrix;
-
-    public Vector3 scanSpotScale = new Vector3(1f, 1f, 1f);
+    private Matrix4x4 scanSpotMatrix;
 
     public static void Notify_EnhancedScanResearchCompleted()
     {
@@ -135,10 +135,10 @@ internal class Building_MobileMineralSonar : Building
         Scribe_Values.Look(ref nextFlashTick, "nextFlashTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
-        PerformScanUpdate();
+        performScanUpdate();
         var periodicLightIsEnabled = Settings.periodicLightIsEnabled;
         if (!periodicLightIsEnabled)
         {
@@ -151,10 +151,10 @@ internal class Building_MobileMineralSonar : Building
         }
 
         nextFlashTick = Find.TickManager.TicksGame + (300 * (int)Find.TickManager.CurTimeSpeed);
-        ThrowFlash();
+        throwFlash();
     }
 
-    public void PerformScanUpdate()
+    private void performScanUpdate()
     {
         var powerOn = powerComp.PowerOn;
         if (powerOn)
@@ -193,14 +193,14 @@ internal class Building_MobileMineralSonar : Building
 
         foreach (var thingDefParameter in detectedDefList)
         {
-            UnfogSomeRandomThingAtScanRange(thingDefParameter);
+            unfogSomeRandomThingAtScanRange(thingDefParameter);
         }
 
         scanRange++;
         scanProgress = 0;
     }
 
-    public void UnfogSomeRandomThingAtScanRange(ThingDef thingDefParameter)
+    private void unfogSomeRandomThingAtScanRange(ThingDef thingDefParameter)
     {
         IEnumerable<Thing> enumerable = Map.listerThings.ThingsOfDef(thingDefParameter);
         if (enumerable == null)
@@ -222,7 +222,7 @@ internal class Building_MobileMineralSonar : Building
         }
     }
 
-    public void ThrowFlash()
+    private void throwFlash()
     {
         if (!(!Position.ShouldSpawnMotesAt(Map) || Map.moteCounter.SaturatedLowPriority))
         {
@@ -233,21 +233,21 @@ internal class Building_MobileMineralSonar : Building
     protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         base.DrawAt(drawLoc, flip);
-        DrawSatelliteDish();
+        drawSatelliteDish();
         if (!Find.Selector.IsSelected(this))
         {
             return;
         }
 
         DrawMaxScanRange();
-        DrawDynamicScanRangeAndScanRay();
+        drawDynamicScanRangeAndScanRay();
         foreach (var thingDefParameter in detectedDefList)
         {
             DrawScanSpotOnThingsWithinScanRange(thingDefParameter);
         }
     }
 
-    public void DrawSatelliteDish()
+    private void drawSatelliteDish()
     {
         satelliteDishMatrix.SetTRS(base.DrawPos + Altitudes.AltIncVect, satelliteDishRotation.ToQuat(),
             satelliteDishScale);
@@ -266,7 +266,7 @@ internal class Building_MobileMineralSonar : Building
         }
     }
 
-    public void DrawDynamicScanRangeAndScanRay()
+    private void drawDynamicScanRangeAndScanRay()
     {
         switch (scanRange)
         {
@@ -299,7 +299,7 @@ internal class Building_MobileMineralSonar : Building
         Graphics.DrawMesh(MeshPool.plane10, scanRayDynamicMatrix, scanRayDynamic, 0);
     }
 
-    public void DrawScanSpotOnThingsWithinScanRange(ThingDef thingDefParameter)
+    private void DrawScanSpotOnThingsWithinScanRange(ThingDef thingDefParameter)
     {
         IEnumerable<Thing> enumerable = Map.listerThings.ThingsOfDef(thingDefParameter);
         if (enumerable == null)

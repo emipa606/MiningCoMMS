@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: mobile mineral sonar -->
+  <ResearchMobileMineralSonar.label>mobile mineral sonar</ResearchMobileMineralSonar.label>
+  <!-- EN: Study the famous MiningCo. MiSoTech* to develop a mineral sonar able to scan and detect ore pockets in the heart of mountains.\n    \n* MiSoTech: Mineral Sonar Technology -->
+  <ResearchMobileMineralSonar.description>Study the famous MiningCo. MiSoTech* to develop a mineral sonar able to scan and detect ore pockets in the heart of mountains.
+    
+* MiSoTech: Mineral Sonar Technology</ResearchMobileMineralSonar.description>
+  <!-- EN: mobile mineral sonar: enhanced scan -->
+  <ResearchMobileMineralSonarEnhancedScan.label>mobile mineral sonar: enhanced scan</ResearchMobileMineralSonarEnhancedScan.label>
+  <!-- EN: By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.\n\nMobile mineral sonar scan range is increased (30 -> 50).\nMobile mineral sonar detection chance is improved.\n\n* MiSoTech: Mineral Sonar Technology -->
+  <ResearchMobileMineralSonarEnhancedScan.description>By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.
+
+Mobile mineral sonar scan range is increased (30 -> 50).
+Mobile mineral sonar detection chance is improved.
+
+* MiSoTech: Mineral Sonar Technology</ResearchMobileMineralSonarEnhancedScan.description>
+</LanguageData>

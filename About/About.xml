@@ -10,6 +10,7 @@
     <li>1.3</li>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <modDependencies />
   <loadAfter />
@@ -30,7 +31,37 @@ Update of Rikikis mod https://steamcommunity.com/sharedfiles/filedetails/?id=755
 [/table]
 	
 [img]https://i.imgur.com/Z4GOv8H.png[/img]
-This mod adds the MiningCo. mobile mineral sonar. See the forum thread for content/changelog. https://ludeon.com/forums/index.php?topic=14711.msg153939#msg153939
+[h1]MiningCo.: Mobile mineral sonar[/h1]
+
+Surface resources are becoming scarce ? Wandering the plains is too dangerous for you ? Then MiningCo. has [b]THE[/b] solution for [b]YOU![/b]
+
+MiningCo. is proud to present you the [b]Mobile mineral sonar[/b], one of the jewel of our mining systems collection. Thanks to our revolutionary MiSoTech™, jointly designed and tested by our highly experienced teams of engineers and deep-space miners, the Mobile mineral sonar is an essential asset for every miner.
+
+[img]https://i.imgur.com/f6eXi0L.png[/img]
+
+[h2]Features[/h2]
+[list]
+[*]Scans the heart of big mountains for metallic objects.
+[*]Can be easily displaced when the scan is finished (minifiable).
+[*]Battery-powered: the optional connection with a power net will boost scan speed.
+[/list]
+
+[h2]Technical support[/h2]
+MiningCo. is continuously trying to improve its product to raise its customers satisfaction.
+Any constructive criticism is always welcome! :)
+
+[h2]Modders note[/h2]
+You may be interrested in the following features:
+[list]
+[*]Custom place worker restricter
+[*]Draw dynamic textures and over fog
+[/list]
+
+[h2]License[/h2]
+You are free to get inspiration from this little work and include it in any other mod/modpack. Just put a link to this mod so people can use it as a standalone version too.
+So this is basically licensed under http://creativecommons.org/licenses/by/4.0/
+
+See the forum thread for content/changelog. https://ludeon.com/forums/index.php?topic=14711.msg153939#msg153939
 
 [img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
@@ -41,6 +72,8 @@ This mod adds the MiningCo. mobile mineral sonar. See the forum thread for conte
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3257136373][img]https://img.shields.io/github/v/release/emipa606/MiningCoMMS?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  mountain scan</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
 </ModMetaData>
