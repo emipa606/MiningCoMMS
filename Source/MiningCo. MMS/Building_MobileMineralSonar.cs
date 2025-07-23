@@ -138,6 +138,11 @@ internal class Building_MobileMineralSonar : Building
     protected override void Tick()
     {
         base.Tick();
+        if (!Spawned)
+        {
+            return;
+        }
+
         performScanUpdate();
         var periodicLightIsEnabled = Settings.periodicLightIsEnabled;
         if (!periodicLightIsEnabled)
