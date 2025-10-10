@@ -10,10 +10,6 @@ namespace MobileMineralSonar;
 [StaticConstructorOnStartup]
 internal class Building_MobileMineralSonar : Building
 {
-    private const int baseMaxScanRange = 30;
-
-    private const int enhancedMaxScanRange = 50;
-
     private const float baseDetectionChance = 0.2f;
 
     private const float enhancedDetectionChance = 0.4f;
@@ -21,10 +17,6 @@ internal class Building_MobileMineralSonar : Building
     private const int scanProgressThresholdPerCell = 1000;
 
     private const int flashPeriodInSeconds = 5;
-
-    private static int maxScanRange = baseMaxScanRange;
-
-    private static float detectionChance = baseDetectionChance;
 
     private static readonly Material scanRange10 = MaterialPool.MatFrom("Effects/ScanRange10");
 
@@ -45,9 +37,9 @@ internal class Building_MobileMineralSonar : Building
 
     private readonly Vector3 satelliteDishScale = new(2f, 1f, 2f);
 
-    private readonly Vector3 scanRangeScale30 = new(60f, 1f, 60f);
+    private readonly Vector3 scanRangeScale30 = new(Settings.MaxRange * 2, 1f, Settings.MaxRange * 2);
 
-    private readonly Vector3 scanRangeScale50 = new(100f, 1f, 100f);
+    private readonly Vector3 scanRangeScale50 = new(Settings.MaxEnhancedRange * 2, 1f, Settings.MaxEnhancedRange * 2);
 
     private readonly Vector3 scanSpotScale = new(1f, 1f, 1f);
 
@@ -71,21 +63,9 @@ internal class Building_MobileMineralSonar : Building
 
     private Vector3 scanRangeDynamicScale = new(1f, 1f, 1f);
 
-    public Matrix4x4 scanRangeMatrix10 = default;
-
-    public Matrix4x4 scanRangeMatrix20 = default;
-
     private Matrix4x4 scanRangeMatrix30;
 
-    public Matrix4x4 scanRangeMatrix40 = default;
-
     private Matrix4x4 scanRangeMatrix50;
-
-    public Vector3 scanRangeScale10 = new(20f, 1f, 20f);
-
-    public Vector3 scanRangeScale20 = new(40f, 1f, 40f);
-
-    public Vector3 scanRangeScale40 = new(80f, 1f, 80f);
 
     private Matrix4x4 scanRayDynamicMatrix;
 
@@ -93,11 +73,12 @@ internal class Building_MobileMineralSonar : Building
 
     private Matrix4x4 scanSpotMatrix;
 
-    public static void Notify_EnhancedScanResearchCompleted()
-    {
-        maxScanRange = enhancedMaxScanRange;
-        detectionChance = enhancedDetectionChance;
-    }
+    private static int MaxScanRange => Controller.ResearchMobileMineralSonarEnhancedScan.IsFinished
+        ? Settings.MaxEnhancedRange
+        : Settings.MaxRange;
+
+    private static float DetectionChance =>
+        Controller.ResearchMobileMineralSonarEnhancedScan.IsFinished ? enhancedDetectionChance : baseDetectionChance;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -144,7 +125,7 @@ internal class Building_MobileMineralSonar : Building
         }
 
         performScanUpdate();
-        var periodicLightIsEnabled = Settings.periodicLightIsEnabled;
+        var periodicLightIsEnabled = Settings.PeriodicLightIsEnabled;
         if (!periodicLightIsEnabled)
         {
             return;
@@ -171,13 +152,13 @@ internal class Building_MobileMineralSonar : Building
             satelliteDishRotation = (satelliteDishRotation + 0.2f) % 360f;
         }
 
-        if (scanRange == maxScanRange)
+        if (scanRange == MaxScanRange)
         {
             powerComp.powerOutputInt = 0f;
             return;
         }
 
-        if (Find.TickManager.TicksGame % 60 != 0)
+        if (Find.TickManager.TicksGame % Settings.ScanInterval != 0)
         {
             return;
         }
@@ -219,7 +200,7 @@ internal class Building_MobileMineralSonar : Building
             select thing;
         foreach (var thing2 in enumerable2)
         {
-            var num = detectionChance + (detectionChance * (1f - (scanRange / 50f)));
+            var num = DetectionChance + (DetectionChance * (1f - (scanRange / 50f)));
             if (Rand.Range(0f, 1f) <= num)
             {
                 Map.fogGrid.Unfog(thing2.Position);
@@ -229,10 +210,17 @@ internal class Building_MobileMineralSonar : Building
 
     private void throwFlash()
     {
-        if (!(!Position.ShouldSpawnMotesAt(Map) || Map.moteCounter.SaturatedLowPriority))
+        if (!powerComp.PowerOn)
         {
-            FleckMaker.Static(Position.ToVector3Shifted(), Map, FleckDefOf.ExplosionFlash, flashPeriodInSeconds);
+            return;
         }
+
+        if (!Position.ShouldSpawnMotesAt(Map) || Map.moteCounter.SaturatedLowPriority)
+        {
+            return;
+        }
+
+        FleckMaker.Static(Position.ToVector3Shifted(), Map, FleckDefOf.ExplosionFlash, flashPeriodInSeconds);
     }
 
     protected override void DrawAt(Vector3 drawLoc, bool flip = false)
@@ -261,7 +249,7 @@ internal class Building_MobileMineralSonar : Building
 
     public void DrawMaxScanRange()
     {
-        if (maxScanRange == baseMaxScanRange)
+        if (MaxScanRange == Settings.MaxRange)
         {
             Graphics.DrawMesh(MeshPool.plane10, scanRangeMatrix30, scanRange30, 0);
         }
@@ -338,8 +326,8 @@ internal class Building_MobileMineralSonar : Building
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(base.GetInspectString());
         stringBuilder.AppendLine();
-        stringBuilder.Append("MMS.ScanRange".Translate(scanRange, maxScanRange));
-        if (scanRange >= maxScanRange)
+        stringBuilder.Append("MMS.ScanRange".Translate(scanRange, MaxScanRange));
+        if (scanRange >= MaxScanRange)
         {
             return stringBuilder.ToString();
         }

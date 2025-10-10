@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <MMS.ScanRange>Current/max scan range: {0} / {1}</MMS.ScanRange>
+  <MMS.ReloadNeeded>Changes to the following values requires reloading a save to have full effect</MMS.ReloadNeeded>
   <MMS.ScanProgress>Scan progress: {0} %</MMS.ScanProgress>
+  <MMS.ScanInterval>Scan interval (default 60): {0}</MMS.ScanInterval>
+  <MMS.MaxRange>Base max range (default 30): {0}</MMS.MaxRange>
+  <MMS.MaxEnhancedRange>Enhanced max range (default 50): {0}</MMS.MaxEnhancedRange>
   <MMS.PeriodicLight>Enable periodic light</MMS.PeriodicLight>
   <MMS.PeriodicLightTT>When enabled, the MMS will periodically emits a short flash of light. This can help you locate it.</MMS.PeriodicLightTT>
   <MMS.CurrentModVersion>Installed mod-version: {0}</MMS.CurrentModVersion>

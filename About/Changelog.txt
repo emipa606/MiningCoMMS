@@ -1,5 +1,9 @@
 # Changelog for MiningCoMMS
 
+1.6.2 - Added options for the range and scanning interval
+Used DeepL to update translations for ChineseSimplified, French, German
+
+
 1.6.1 - Fixed error on uninstalling scanner
 
 

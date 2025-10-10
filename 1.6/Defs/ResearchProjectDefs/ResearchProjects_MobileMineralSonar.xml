@@ -21,7 +21,7 @@
     <label>mobile mineral sonar: enhanced scan</label>
     <description>By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.
 
-Mobile mineral sonar scan range is increased (30 -> 50).
+Mobile mineral sonar scan range is increased.
 Mobile mineral sonar detection chance is improved.
 
 * MiSoTech: Mineral Sonar Technology</description>
@@ -34,10 +34,6 @@ Mobile mineral sonar detection chance is improved.
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchMods>
-      <li Class="MobileMineralSonar.ResearchMod_MobileMineralSonar">
-      </li>
-    </researchMods>
     <tab>MiningCo</tab>
     <researchViewX>1</researchViewX>
     <researchViewY>1</researchViewY>

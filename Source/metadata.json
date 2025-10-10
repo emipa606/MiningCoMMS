@@ -3,13 +3,13 @@
   "CanAdd": "0",
   "CanRemove": "2",
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-07-23T19:52:59.4338138+02:00",
+  "LastXmlCleaning": "2025-10-10T20:42:24.6085364+02:00",
   "SocialImageSet": true,
   "SearchTags": " mountain scan",
   "Patches": false,
   "Defs": true,
   "Assemblies": true,
-  "LinesOfCode": 16708,
-  "LinesOfXML": 4549,
+  "LinesOfCode": 17719,
+  "LinesOfXML": 4414,
   "CodeBaseSize": 68
 }

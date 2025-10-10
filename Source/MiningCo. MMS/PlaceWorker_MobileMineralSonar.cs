@@ -23,7 +23,7 @@ public class PlaceWorker_MobileMineralSonar : PlaceWorker
         if (isFinished)
         {
             var material = MaterialPool.MatFrom("Effects/ScanRange50");
-            var s = new Vector3(100f, 1f, 100f);
+            var s = new Vector3(Settings.MaxEnhancedRange * 2, 1f, Settings.MaxEnhancedRange * 2);
             var matrix = default(Matrix4x4);
             matrix.SetTRS(
                 center.ToVector3ShiftedWithAltitude(AltitudeLayer.Blueprint) + new Vector3(0f, 15f, 0f) +
@@ -33,7 +33,7 @@ public class PlaceWorker_MobileMineralSonar : PlaceWorker
         else
         {
             var material2 = MaterialPool.MatFrom("Effects/ScanRange30");
-            var s2 = new Vector3(60f, 1f, 60f);
+            var s2 = new Vector3(Settings.MaxRange * 2, 1f, Settings.MaxRange * 2);
             var matrix2 = default(Matrix4x4);
             matrix2.SetTRS(
                 center.ToVector3ShiftedWithAltitude(AltitudeLayer.Blueprint) + new Vector3(0f, 15f, 0f) +

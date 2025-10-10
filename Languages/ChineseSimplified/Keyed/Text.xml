@@ -6,4 +6,8 @@
   <MMS.PeriodicLight>启用周期性灯光</MMS.PeriodicLight>
   <MMS.PeriodicLightTT>启用后，MMS 会定期发出短促的闪光。这可以帮助您找到它。</MMS.PeriodicLightTT>
   <MMS.CurrentModVersion>已安装模块版本：{0}</MMS.CurrentModVersion>
+  <MMS.ReloadNeeded>更改以下值需要重新加载保存才能完全生效</MMS.ReloadNeeded>
+  <MMS.ScanInterval>扫描间隔（默认 60）：{0}</MMS.ScanInterval>
+  <MMS.MaxRange>基本最大范围（默认 30）：{0}</MMS.MaxRange>
+  <MMS.MaxEnhancedRange>增强最大范围（默认 50）：{0}</MMS.MaxEnhancedRange>
 </LanguageData>

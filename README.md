@@ -1,14 +1,14 @@
 # [MiningCo. MMS (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3257136373)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://i.postimg.cc/1X4HT06h/Info.png)
 
 Update of Rikikis mod https://steamcommunity.com/sharedfiles/filedetails/?id=755224256
 
 - Added translation support
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://i.postimg.cc/8csH3dWV/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://i.postimg.cc/hvhrw8xB/Original-Description.png)
 
 # MiningCo.: Mobile mineral sonar
 
@@ -17,7 +17,7 @@ Surface resources are becoming scarce ? Wandering the plains is too dangerous fo
 
 MiningCo. is proud to present you the **Mobile mineral sonar**, one of the jewel of our mining systems collection. Thanks to our revolutionary MiSoTech™, jointly designed and tested by our highly experienced teams of engineers and deep-space miners, the Mobile mineral sonar is an essential asset for every miner.
 
-![Image](https://i.imgur.com/f6eXi0L.png)
+![Image](https://i.postimg.cc/vB1BhQxY/f6eXi0L.png)
 
 ## Features
 
@@ -51,13 +51,13 @@ So this is basically licensed under http://creativecommons.org/licenses/by/4.0/
 
 See the forum thread for content/changelog. https://ludeon.com/forums/index.php?topic=14711.msg153939#msg153939
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.

@@ -6,4 +6,8 @@
   <MMS.PeriodicLight>Activer l'éclairage périodique</MMS.PeriodicLight>
   <MMS.PeriodicLightTT>Lorsque cette fonction est activée, le MMS émet périodiquement un bref flash lumineux. Cela peut vous aider à le localiser.</MMS.PeriodicLightTT>
   <MMS.CurrentModVersion>Version installée du mod : {0}</MMS.CurrentModVersion>
+  <MMS.ReloadNeeded>Les modifications des valeurs suivantes nécessitent de recharger une sauvegarde pour être pleinement effectives.</MMS.ReloadNeeded>
+  <MMS.ScanInterval>Intervalle de balayage (par défaut 60) : {0}</MMS.ScanInterval>
+  <MMS.MaxRange>Plage maximale de base (par défaut 30) : {0}</MMS.MaxRange>
+  <MMS.MaxEnhancedRange>Portée maximale améliorée (par défaut 50) : {0}</MMS.MaxEnhancedRange>
 </LanguageData>
