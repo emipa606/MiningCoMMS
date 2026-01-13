@@ -16,4 +16,5 @@ Die Scan-Reichweite des mobilen Mineralsonars wurde erhöht (30 -> 50).
 Die Chance, mit dem mobilen Mineralsonar entdeckt zu werden, wurde verbessert.
 
 * MiSoTech: Mineralien-Sonar-Technologie</ResearchMobileMineralSonarEnhancedScan.description>
+  <!-- EN: By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.\n\nMobile mineral sonar scan range is increased.\nMobile mineral sonar detection chance is improved.\n\n* MiSoTech: Mineral Sonar Technology -->
 </LanguageData>

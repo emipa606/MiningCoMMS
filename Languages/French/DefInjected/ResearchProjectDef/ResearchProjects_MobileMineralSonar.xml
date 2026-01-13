@@ -16,4 +16,5 @@ La portée de balayage du sonar minéral mobile est augmentée (30 -> 50).
 Les chances de détection du sonar minéral mobile sont améliorées.
 
 * MiSoTech : Technologie de sonar minéral</ResearchMobileMineralSonarEnhancedScan.description>
+  <!-- EN: By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.\n\nMobile mineral sonar scan range is increased.\nMobile mineral sonar detection chance is improved.\n\n* MiSoTech: Mineral Sonar Technology -->
 </LanguageData>

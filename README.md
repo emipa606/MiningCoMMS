@@ -1,14 +1,14 @@
 # [MiningCo. MMS (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3257136373)
 
-![Image](https://i.postimg.cc/1X4HT06h/Info.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Rikikis mod https://steamcommunity.com/sharedfiles/filedetails/?id=755224256
 
 - Added translation support
 
-![Image](https://i.postimg.cc/8csH3dWV/Notice.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.postimg.cc/hvhrw8xB/Original-Description.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 # MiningCo.: Mobile mineral sonar
 
@@ -17,7 +17,7 @@ Surface resources are becoming scarce ? Wandering the plains is too dangerous fo
 
 MiningCo. is proud to present you the **Mobile mineral sonar**, one of the jewel of our mining systems collection. Thanks to our revolutionary MiSoTech™, jointly designed and tested by our highly experienced teams of engineers and deep-space miners, the Mobile mineral sonar is an essential asset for every miner.
 
-![Image](https://i.postimg.cc/vB1BhQxY/f6eXi0L.png)
+![Image](https://img.litet.net/f6eXi0L.png)
 
 ## Features
 
@@ -51,7 +51,7 @@ So this is basically licensed under http://creativecommons.org/licenses/by/4.0/
 
 See the forum thread for content/changelog. https://ludeon.com/forums/index.php?topic=14711.msg153939#msg153939
 
-![Image](https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
@@ -65,4 +65,4 @@ See the forum thread for content/changelog. https://ludeon.com/forums/index.php?
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/MiningCoMMS?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3257136373) | tags:  mountain scan
+[![Image](https://img.shields.io/github/v/release/emipa606/MiningCoMMS?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3257136373) | tags: mountain scan

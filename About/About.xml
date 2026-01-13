@@ -14,30 +14,30 @@
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>[img]https://i.postimg.cc/1X4HT06h/Info.png[/img]
+  <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of Rikikis mod https://steamcommunity.com/sharedfiles/filedetails/?id=755224256
 
 - Added translation support
 
-[img]https://i.postimg.cc/8csH3dWV/Notice.png[/img]
+[img]https://img.litet.net/logos/Notice.png[/img]
 
 [table]
-    [tr][td][url=https://discord.gg/h5TY6DA][img]https://i.postimg.cc/T1h9SjbF/Discord.png[/img][/url][/td] [td][url=https://github.com/emipa606/MiningCoMMS][img]https://i.postimg.cc/fykKF7X4/Github.png[/img][/url][/td]
+    [tr][td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td] [td][url=https://github.com/emipa606/MiningCoMMS][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.postimg.cc/MHXD40RW/Safe-To-Add.png[/img][/td]
-        [td][img]https://i.postimg.cc/brdTM0bP/Remove-May-Work.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/RemoveMayWork.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.postimg.cc/hvhrw8xB/Original-Description.png[/img]
+[img]https://img.litet.net/logos/OriginalDescription.png[/img]
 [h1]MiningCo.: Mobile mineral sonar[/h1]
 
 Surface resources are becoming scarce ? Wandering the plains is too dangerous for you ? Then MiningCo. has [b]THE[/b] solution for [b]YOU![/b]
 
 MiningCo. is proud to present you the [b]Mobile mineral sonar[/b], one of the jewel of our mining systems collection. Thanks to our revolutionary MiSoTech™, jointly designed and tested by our highly experienced teams of engineers and deep-space miners, the Mobile mineral sonar is an essential asset for every miner.
 
-[img]https://i.postimg.cc/vB1BhQxY/f6eXi0L.png[/img]
+[img]https://img.litet.net/f6eXi0L.png[/img]
 
 [h2]Features[/h2]
 [list]
@@ -63,7 +63,7 @@ So this is basically licensed under http://creativecommons.org/licenses/by/4.0/
 
 See the forum thread for content/changelog. https://ludeon.com/forums/index.php?topic=14711.msg153939#msg153939
 
-[img]https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png[/img]
+[img]https://img.litet.net/logos/ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -74,6 +74,6 @@ See the forum thread for content/changelog. https://ludeon.com/forums/index.php?
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3257136373][img]https://img.shields.io/github/v/release/emipa606/MiningCoMMS?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  mountain scan</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3257136373][img]https://img.shields.io/github/v/release/emipa606/MiningCoMMS?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: mountain scan</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>

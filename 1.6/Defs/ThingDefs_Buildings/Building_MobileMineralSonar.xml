@@ -63,6 +63,9 @@
       <li>AncientCryptosleepCasket</li>
       <li MayRequire="Rikiki.ColdCrystal">MineableColdCrystal</li>
       <li MayRequire="Rikiki.ColdCrystal">MineableAmberCrystal</li>
+      <li MayRequire="kikohi.jewelry">Diamond</li>
+      <li MayRequire="kikohi.jewelry">Ruby</li>
+      <li MayRequire="kikohi.jewelry">Sapphire</li>
     </scannedThingDefs>
   </ThingDef>
 </Defs>

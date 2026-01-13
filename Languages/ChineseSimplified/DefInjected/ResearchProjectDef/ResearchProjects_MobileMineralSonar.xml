@@ -16,4 +16,5 @@
 移动矿物声纳探测几率提高。
 
 * MiSoTech：矿物声纳技术</ResearchMobileMineralSonarEnhancedScan.description>
+  <!-- EN: By doing some code refactoring and optimisations in the MiSoTech* noise reduction algorithms, your can improve the mobile mineral sonar efficiency.\n\nMobile mineral sonar scan range is increased.\nMobile mineral sonar detection chance is improved.\n\n* MiSoTech: Mineral Sonar Technology -->
 </LanguageData>
