@@ -1,5 +1,8 @@
 # Changelog for MiningCoMMS
 
+1.6.4 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3333419387]Expanded Materials - Metals[/url]
+
+
 1.6.3 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3203280763]Jewelry[/url]
 
 

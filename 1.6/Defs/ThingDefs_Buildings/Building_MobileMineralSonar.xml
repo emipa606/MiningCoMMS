@@ -66,6 +66,14 @@
       <li MayRequire="kikohi.jewelry">Diamond</li>
       <li MayRequire="kikohi.jewelry">Ruby</li>
       <li MayRequire="kikohi.jewelry">Sapphire</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Coal</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Iron</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Lead</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Tin</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Copper</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+      <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Silicon</li>
     </scannedThingDefs>
   </ThingDef>
 </Defs>
