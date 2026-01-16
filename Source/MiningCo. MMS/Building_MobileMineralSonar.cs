@@ -35,6 +35,9 @@ internal class Building_MobileMineralSonar : Building
 
     private static readonly Material scanSpot = MaterialPool.MatFrom("Effects/ScanSpot", ShaderDatabase.Transparent);
 
+
+    public static readonly List<ThingDef> MineralSonarDefs = [];
+
     private readonly Vector3 satelliteDishScale = new(2f, 1f, 2f);
 
     private readonly Vector3 scanRangeScale30 = new(Settings.MaxRange * 2, 1f, Settings.MaxRange * 2);
@@ -84,7 +87,7 @@ internal class Building_MobileMineralSonar : Building
     {
         base.SpawnSetup(map, respawningAfterLoad);
         detectedDefList = [];
-        foreach (var item in ((ThingDef_MobileMineralSonar)def).scannedThingDefs)
+        foreach (var item in ((ThingDef_MobileMineralSonar)def).ScannedThingDefs)
         {
             detectedDefList.Add(item);
         }

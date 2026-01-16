@@ -9,8 +9,6 @@ public class Controller : Mod
     public static Settings Settings;
     public static string CurrentVersion;
 
-    private static ResearchProjectDef researchMobileMineralSonarEnhancedScan;
-
     public Controller(ModContentPack content) : base(content)
     {
         GetSettings<Settings>();
@@ -21,9 +19,9 @@ public class Controller : Mod
     {
         get
         {
-            researchMobileMineralSonarEnhancedScan ??=
+            field ??=
                 ResearchProjectDef.Named("ResearchMobileMineralSonarEnhancedScan");
-            return researchMobileMineralSonarEnhancedScan;
+            return field;
         }
     }
 
